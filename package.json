@@ -10,7 +10,6 @@
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-uglify-es": "^3.0.0",
-    "gulp-watch": "^5.0.1",
     "tailwindcss-debug-screens": "^2.0.0"
   },
   "scripts": {
