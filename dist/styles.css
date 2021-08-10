@@ -6447,10 +6447,6 @@ video {
   height: 315px;
 }
 
-.h-linksBoxExt {
-  height: 18.375rem;
-}
-
 .h-linksBox {
   height: 15.78rem;
 }
@@ -6900,11 +6896,11 @@ video {
 }
 
 .w-linksBoxExt {
-  width: 25.5rem;
+  width: 408px;
 }
 
 .w-linksBox {
-  width: 23.625rem;
+  width: 378px;
 }
 
 .group:hover .group-hover\:w-0 {
@@ -7188,11 +7184,11 @@ video {
 }
 
 .group:hover .group-hover\:w-linksBoxExt {
-  width: 25.5rem;
+  width: 408px;
 }
 
 .group:hover .group-hover\:w-linksBox {
-  width: 23.625rem;
+  width: 378px;
 }
 
 .hover\:w-0:hover {
@@ -7476,11 +7472,11 @@ video {
 }
 
 .hover\:w-linksBoxExt:hover {
-  width: 25.5rem;
+  width: 408px;
 }
 
 .hover\:w-linksBox:hover {
-  width: 23.625rem;
+  width: 378px;
 }
 
 .focus\:w-0:focus {
@@ -7764,11 +7760,11 @@ video {
 }
 
 .focus\:w-linksBoxExt:focus {
-  width: 25.5rem;
+  width: 408px;
 }
 
 .focus\:w-linksBox:focus {
-  width: 23.625rem;
+  width: 378px;
 }
 
 .min-w-0 {
@@ -10523,6 +10519,11 @@ video {
   --tw-scale-y: 1.5;
 }
 
+.scale-link {
+  --tw-scale-x: 1.08;
+  --tw-scale-y: 1.08;
+}
+
 .hover\:scale-0:hover {
   --tw-scale-x: 0;
   --tw-scale-y: 0;
@@ -10571,6 +10572,11 @@ video {
 .hover\:scale-150:hover {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
+}
+
+.hover\:scale-link:hover {
+  --tw-scale-x: 1.08;
+  --tw-scale-y: 1.08;
 }
 
 .group:hover .group-hover\:scale-0 {
@@ -10623,6 +10629,11 @@ video {
   --tw-scale-y: 1.5;
 }
 
+.group:hover .group-hover\:scale-link {
+  --tw-scale-x: 1.08;
+  --tw-scale-y: 1.08;
+}
+
 .scale-x-0 {
   --tw-scale-x: 0;
 }
@@ -10661,6 +10672,10 @@ video {
 
 .scale-x-150 {
   --tw-scale-x: 1.5;
+}
+
+.scale-x-link {
+  --tw-scale-x: 1.08;
 }
 
 .scale-y-0 {
@@ -10703,6 +10718,10 @@ video {
   --tw-scale-y: 1.5;
 }
 
+.scale-y-link {
+  --tw-scale-y: 1.08;
+}
+
 .hover\:scale-x-0:hover {
   --tw-scale-x: 0;
 }
@@ -10741,6 +10760,10 @@ video {
 
 .hover\:scale-x-150:hover {
   --tw-scale-x: 1.5;
+}
+
+.hover\:scale-x-link:hover {
+  --tw-scale-x: 1.08;
 }
 
 .hover\:scale-y-0:hover {
@@ -10783,6 +10806,10 @@ video {
   --tw-scale-y: 1.5;
 }
 
+.hover\:scale-y-link:hover {
+  --tw-scale-y: 1.08;
+}
+
 .group:hover .group-hover\:scale-x-0 {
   --tw-scale-x: 0;
 }
@@ -10823,6 +10850,10 @@ video {
   --tw-scale-x: 1.5;
 }
 
+.group:hover .group-hover\:scale-x-link {
+  --tw-scale-x: 1.08;
+}
+
 .group:hover .group-hover\:scale-y-0 {
   --tw-scale-y: 0;
 }
@@ -10861,6 +10892,10 @@ video {
 
 .group:hover .group-hover\:scale-y-150 {
   --tw-scale-y: 1.5;
+}
+
+.group:hover .group-hover\:scale-y-link {
+  --tw-scale-y: 1.08;
 }
 
 @-webkit-keyframes spin {
@@ -38282,10 +38317,6 @@ video {
     height: 315px;
   }
 
-  .sm\:h-linksBoxExt {
-    height: 18.375rem;
-  }
-
   .sm\:h-linksBox {
     height: 15.78rem;
   }
@@ -38735,11 +38766,11 @@ video {
   }
 
   .sm\:w-linksBoxExt {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .sm\:w-linksBox {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .group:hover .sm\:group-hover\:w-0 {
@@ -39023,11 +39054,11 @@ video {
   }
 
   .group:hover .sm\:group-hover\:w-linksBoxExt {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .group:hover .sm\:group-hover\:w-linksBox {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .sm\:hover\:w-0:hover {
@@ -39311,11 +39342,11 @@ video {
   }
 
   .sm\:hover\:w-linksBoxExt:hover {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .sm\:hover\:w-linksBox:hover {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .sm\:focus\:w-0:focus {
@@ -39599,11 +39630,11 @@ video {
   }
 
   .sm\:focus\:w-linksBoxExt:focus {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .sm\:focus\:w-linksBox:focus {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .sm\:min-w-0 {
@@ -69013,10 +69044,6 @@ video {
     height: 315px;
   }
 
-  .md\:h-linksBoxExt {
-    height: 18.375rem;
-  }
-
   .md\:h-linksBox {
     height: 15.78rem;
   }
@@ -69466,11 +69493,11 @@ video {
   }
 
   .md\:w-linksBoxExt {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .md\:w-linksBox {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .group:hover .md\:group-hover\:w-0 {
@@ -69754,11 +69781,11 @@ video {
   }
 
   .group:hover .md\:group-hover\:w-linksBoxExt {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .group:hover .md\:group-hover\:w-linksBox {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .md\:hover\:w-0:hover {
@@ -70042,11 +70069,11 @@ video {
   }
 
   .md\:hover\:w-linksBoxExt:hover {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .md\:hover\:w-linksBox:hover {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .md\:focus\:w-0:focus {
@@ -70330,11 +70357,11 @@ video {
   }
 
   .md\:focus\:w-linksBoxExt:focus {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .md\:focus\:w-linksBox:focus {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .md\:min-w-0 {
@@ -99744,10 +99771,6 @@ video {
     height: 315px;
   }
 
-  .lg\:h-linksBoxExt {
-    height: 18.375rem;
-  }
-
   .lg\:h-linksBox {
     height: 15.78rem;
   }
@@ -100197,11 +100220,11 @@ video {
   }
 
   .lg\:w-linksBoxExt {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .lg\:w-linksBox {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .group:hover .lg\:group-hover\:w-0 {
@@ -100485,11 +100508,11 @@ video {
   }
 
   .group:hover .lg\:group-hover\:w-linksBoxExt {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .group:hover .lg\:group-hover\:w-linksBox {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .lg\:hover\:w-0:hover {
@@ -100773,11 +100796,11 @@ video {
   }
 
   .lg\:hover\:w-linksBoxExt:hover {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .lg\:hover\:w-linksBox:hover {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .lg\:focus\:w-0:focus {
@@ -101061,11 +101084,11 @@ video {
   }
 
   .lg\:focus\:w-linksBoxExt:focus {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .lg\:focus\:w-linksBox:focus {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .lg\:min-w-0 {
@@ -130475,10 +130498,6 @@ video {
     height: 315px;
   }
 
-  .xl\:h-linksBoxExt {
-    height: 18.375rem;
-  }
-
   .xl\:h-linksBox {
     height: 15.78rem;
   }
@@ -130928,11 +130947,11 @@ video {
   }
 
   .xl\:w-linksBoxExt {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .xl\:w-linksBox {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .group:hover .xl\:group-hover\:w-0 {
@@ -131216,11 +131235,11 @@ video {
   }
 
   .group:hover .xl\:group-hover\:w-linksBoxExt {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .group:hover .xl\:group-hover\:w-linksBox {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .xl\:hover\:w-0:hover {
@@ -131504,11 +131523,11 @@ video {
   }
 
   .xl\:hover\:w-linksBoxExt:hover {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .xl\:hover\:w-linksBox:hover {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .xl\:focus\:w-0:focus {
@@ -131792,11 +131811,11 @@ video {
   }
 
   .xl\:focus\:w-linksBoxExt:focus {
-    width: 25.5rem;
+    width: 408px;
   }
 
   .xl\:focus\:w-linksBox:focus {
-    width: 23.625rem;
+    width: 378px;
   }
 
   .xl\:min-w-0 {

@@ -156,12 +156,58 @@
     </div>
 
     <!-- CAROUSEL -->
-        <div class="carousel relative bg-yellow-300 max-w-screen">
+        <div class="carousel relative max-w-screen">
+
+    
             <div class="slide">
                 <img class="w-screen" src="img/carousel-img1.png">
                 <div class="absolute top-0 flex justify-center w-full h-full">
-                    <div class="container bg-indigo-200 flex items-center">
-                        <div class="box w-32 h-32 bg-blue-500"></div>
+                    <div class="container flex items-center">
+                        <!-- box -->
+                        <div class="flex flex-col items-center py-8 px-6 bg-darkGrey text-white">
+
+                            <h1 class="text-5xl font-neue">A bathroom for every budget</h1>
+
+                            <!-- button -->
+                            <a class="group font-mont font-bold mt-7" href="#">
+                                <!-- text -->
+                                <div class="flex items-center">
+                                    <span class="text-base">Get our brochure</span>
+                                    <svg class="h-4 ml-2.5" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                                <!-- divider -->
+                                <div class="h-1 mt-2 bg-primary opacity-0 group-hover:opacity-100"></div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="w-screen" src="img/carousel-img2.png">
+                <div class="absolute top-0 flex justify-center w-full h-full">
+                    <div class="container flex items-center">
+                        <!-- box -->
+                        <div class="flex flex-col items-center py-8 px-6 bg-darkGrey text-white">
+
+                            <h1 class="text-5xl font-neue">A bathroom for every budget</h1>
+
+                            <!-- button -->
+                            <a class="group font-mont font-bold mt-7" href="#">
+                                <!-- text -->
+                                <div class="flex items-center">
+                                    <span class="text-base">Get our brochure</span>
+                                    <svg class="h-4 ml-2.5" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </div>
+                                <!-- divider -->
+                                <div class="h-1 mt-2 bg-primary opacity-0 group-hover:opacity-100"></div>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -381,7 +427,7 @@
 
         <div class="container absolute transform left-1/2 -translate-x-1/2 w-full h-full flex top-0 z-20">
             <!-- box -->
-            <div class="box mx-auto bg-primary absolute text-white w-full md:w-1/2 py-8 px-10">
+            <div class="mx-auto bg-primary absolute text-white w-full md:w-1/2 py-8 px-10">
                 <h1 class="text-5xl font-neue">Free Home Measure</h1>
                 <p class="mt-6 font-mont">We can arrange for one of our trusted traders to visit your home, assess what you need and answer your questions.</p>
                 <button class="btn mt-6 mb-9"><img class="mr-3" src="img/icon-hm.svg" alt=""> Book Home Measure</button>
@@ -422,25 +468,61 @@
 
     <!-- LINKS -->
     <div id="links" class="links bg-primary py-4">
-        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-16">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  py-16">
 
             <!-- card -->
-            <div class="w-linksBoxExt bg-white relative flex justify-center group">
-                <!-- textbox wrapper -->
-                <div class="w-linksBox h-full bg-yellow absolute top-0">
-                    <div class="bg-black inline-block absolute transform -translate-y-1/2 py-5 px-7 left-0 z-20">
-                        <h1 class="text-white font-neue font-bold text-4xl">Latest brochure</h1>
-                    </div>
-                </div>
-                <!-- inner -->
-                <div class="w-linksBox h-full flex justify-center relative overflow-y-hidden origin-center group-hover:w-full">
+            <div id="card" class="w-linksBoxExt h-linksBox relative group bg-pink-500">
 
-                    <!-- img wrapper -->
-                    <div class="w-full h-full bg-blue-500 group-hover:scale-125 transform flex justify-center origin-center overflow-y-hidden">
-                        <img src="img/link-brochure.png" alt="">
+                <!-- textbox container -->
+                <div class="w-linksBox h-full absolute left-1/2 transform -translate-x-1/2 z-20">
+                    <!-- textbox -->
+                    <div class="bg-black p-5 inline-block absolute transform -translate-y-1/2 z-20">
+                        <h1 class="text-white">Latest brochure</h1>
                     </div>
                 </div>
+
+                <!-- content container -->
+                <div class="w-linksBox h-full absolute left-1/2 transform -translate-x-1/2 overflow-y-hidden group-hover:w-full transition-all">
+                    <img class="h-full mx-auto transform group-hover:w-full group-hover:h-auto origin-center transition-all" src="img/link-brochure.png" alt="">
+                </div>
+            
             </div>
+            <!-- card -->
+            <div id="card" class="w-linksBoxExt h-linksBox relative group bg-yellow">
+
+                <!-- textbox container -->
+                <div class="w-linksBox h-full absolute left-1/2 transform -translate-x-1/2 z-20">
+                    <!-- textbox -->
+                    <div class="bg-black p-5 inline-block absolute transform -translate-y-1/2 z-20">
+                        <h1 class="text-white">Latest brochure</h1>
+                    </div>
+                </div>
+
+                <!-- content container -->
+                <div class="w-linksBox h-full absolute left-1/2 transform -translate-x-1/2 overflow-y-hidden group-hover:w-full transition-all">
+                    <img class="h-full mx-auto transform group-hover:w-full group-hover:h-auto origin-center transition-all" src="img/link-brochure.png" alt="">
+                </div>
+            
+            </div>
+            <!-- card -->
+            <div id="card" class="w-linksBoxExt h-linksBox relative group">
+
+                <!-- textbox container -->
+                <div class="w-linksBox h-full absolute left-1/2 transform -translate-x-1/2 z-20">
+                    <!-- textbox -->
+                    <div class="bg-black p-5 inline-block absolute transform -translate-y-1/2 z-20">
+                        <h1 class="text-white">Latest brochure</h1>
+                    </div>
+                </div>
+
+                <!-- content container -->
+                <div class="w-linksBox h-full absolute left-1/2 transform -translate-x-1/2 overflow-y-hidden group-hover:w-full transition-all">
+                    <img class="h-full mx-auto transform group-hover:w-full group-hover:h-auto origin-center transition-all" src="img/link-brochure.png" alt="">
+                </div>
+            
+            </div>
+           
+            
 
         </div>
     </div>
@@ -450,21 +532,21 @@
 
         <div class="container mx-auto pt-12 pb-10">
             <!-- logo wrapper -->
-            <div class="w-full">
+            <div class="w-full flex justify-center md:justify-start">
                 <img src="img/logo.svg" alt="Clifton Trade Bathrooms">
             </div>
 
             <!-- links -->
             <div class="grid grid-cols-1 md:grid-cols-3 font-mont mt-11">
                 <!-- col1 -->
-                <div class="flex flex-col text-base">
+                <div class="flex flex-col text-center md:text-left text-base">
                     <a class="footer-link font-bold text-primary" href="#">&#169 2021 Clifton Trade Bathrooms Limited</a>
                     <a class="footer-link" href="#">The Clifton Way</a>
                     <a class="footer-link" href="#">Price guide</a>
                     <a class="footer-link" href="#">Work at Clifton</a>
                 </div>
                 <!-- col2 -->
-                <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-left">
                     <a class="footer-link" href="#">Walls, floors &amp; ceilings</a>
                     <a class="footer-link" href="#">Bathroom suites</a>
                     <a class="footer-link" href="#">Bathroom furniture</a>
@@ -477,7 +559,7 @@
                     <a class="footer-link" href="#">Accessories</a>
                 </div>
                 <!-- col3 -->
-                <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-left">
                     <a class="footer-link" href="#">Build a quote</a>
                     <a class="footer-link" href="#">Inspiration</a>
                     <a class="footer-link" href="#">Brochure</a>
@@ -491,7 +573,6 @@
     <!-- JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <!-- carousel js -->
     <script type="text/javascript">
     $('.carousel').slick({
@@ -513,7 +594,6 @@
     });
 
     </script>
-
     <!-- nav js -->
     <script src="js/nav.js"></script>
 </body>

@@ -21,18 +21,20 @@ module.exports = {
         searchBar: "28.5rem",
         featureTile: "560px",
         featureTileExt: "620px",
-        linksBoxExt: "25.5rem",
-        linksBox: "23.625rem"
+        linksBoxExt: "408px",
+        linksBox: "378px"
       },
       height: {
         featureTile: "315px",
-        linksBoxExt: "18.375rem",
         linksBox: "15.78rem",
         linksBoxText: "5.375rem"
       },
+      scale: {
+        link: "1.08"
+      },
       fontSize: {
         none: "0",
-      }
+      },
     },
     screens: {
       'sm': '640px',
@@ -44,9 +46,9 @@ module.exports = {
   },
   variants: {
     width: ["responsive","group-hover", "hover", "focus"],
-  scale: ["hover", "group-hover"],
-  fill: ["hover", "focus", "group-hover"],
-  opacity: ["hover", "group-hover"],
+    scale: ["hover", "group-hover"],
+    fill: ["hover", "focus", "group-hover"],
+    opacity: ["hover", "group-hover"],
     extend: {},
   },
   plugins: [require('tailwindcss-debug-screens')],
