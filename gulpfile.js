@@ -20,7 +20,18 @@ gulp.task("uglify", async () => {
     console.log("Uglifying JS...");
 })
 
-//watch js
-gulp.task("watch", () => {
-    return watch("src/js/*.js", uglify)
-})
+function defaultTask(cb){
+    gulp.src("src/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("dist/js/"))
+    console.log("Uglifying JS...");
+
+    gulp.src("src/img/*")
+    .pipe(imgMin())
+    .pipe(gulp.dest("dist/img"))
+
+    console.log("Minifying images...");
+    cb()
+}
+
+exports.default = defaultTask
