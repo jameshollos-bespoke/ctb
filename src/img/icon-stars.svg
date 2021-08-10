@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106.001" height="18" viewBox="0 0 106.001 18">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Polygon_2" data-name="Polygon 2" d="M9,0l2.7,6.043,6.3.833-4.631,4.567L14.562,18,9,14.78,3.438,18l1.194-6.557L0,6.875l6.3-.833Z" transform="translate(-0.07 0.348)" fill="#da291c"/>
+    </clipPath>
+  </defs>
+  <g id="Stars" transform="translate(-917 -3225.348)">
+    <path id="Polygon_1" data-name="Polygon 1" d="M9,0l2.7,6.043,6.3.833-4.631,4.567L14.562,18,9,14.78,3.438,18l1.194-6.557L0,6.875l6.3-.833Z" transform="translate(917 3225.348)" fill="#da291c"/>
+    <path id="Polygon_1-2" data-name="Polygon 1" d="M9,0l2.7,6.043,6.3.833-4.631,4.567L14.562,18,9,14.78,3.438,18l1.194-6.557L0,6.875l6.3-.833Z" transform="translate(939 3225.348)" fill="#da291c"/>
+    <path id="Polygon_1-3" data-name="Polygon 1" d="M9,0l2.7,6.043,6.3.833-4.631,4.567L14.562,18,9,14.78,3.438,18l1.194-6.557L0,6.875l6.3-.833Z" transform="translate(961 3225.348)" fill="#da291c"/>
+    <path id="Polygon_1-4" data-name="Polygon 1" d="M9,0l2.7,6.043,6.3.833-4.631,4.567L14.562,18,9,14.78,3.438,18l1.194-6.557L0,6.875l6.3-.833Z" transform="translate(983 3225.348)" fill="#da291c"/>
+    <path id="Polygon_1-5" data-name="Polygon 1" d="M9,0l2.7,6.043,6.3.833-4.631,4.567L14.562,18,9,14.78,3.438,18l1.194-6.557L0,6.875l6.3-.833Z" transform="translate(1005 3225.348)" fill="gray"/>
+    <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(1005.071 3225)" clip-path="url(#clip-path)">
+      <rect id="Rectangle_18" data-name="Rectangle 18" width="7.951" height="18.348" transform="translate(0 0)" fill="#da291c"/>
+    </g>
+  </g>
+</svg>

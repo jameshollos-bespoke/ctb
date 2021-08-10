@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply flex py-3 px-6 rounded-md text-white bg-primary border-white border-2 font-bold font-mont;
+}
+.btn:hover {
+    @apply bg-red-700
+}
+.active {
+    @apply block;
+}
+.visible {
+    @apply opacity-100;
+}
+.nav-link {
+    @apply flex justify-between cursor-pointer items-center pt-1.5 transition-all;
+}
+.basins-link {
+    @apply cursor-pointer pt-1.5;
+}
+.footer-link {
+    @apply mb-2.5 leading-5;
+}
+
+
+.slick-dots {
+    @apply absolute bottom-0 flex justify-center container mx-auto text-none left-1/2 transform -translate-x-1/2 pb-7;
+}
+.slick-dots button  {
+    @apply bg-white rounded-full h-3 w-3 mx-1.5;
+}
+.slick-active button {
+    @apply bg-primary;
+}
+

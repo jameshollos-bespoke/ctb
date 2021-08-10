@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clifton | Tiles & Bathrooms</title>
+    <link rel="stylesheet" href="https://use.typekit.net/dub3wfs.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
+</head>
+
+<body class="debug-screens">
+    <!-- HEADER (inc. NAV) -->
+    <div class="bg-navy ">
+        <!-- main content -->
+        <div class="pt-7 pb-3 flex flex-col items-start justify-between relative">
+            <div class="container mx-auto">
+                <!-- top section (logo + search)-->
+                <div class="w-full flex flex-col items-center justify-center md:justify-start md:flex-row md:w-auto">
+                    <img src="img/logo.svg" class="bg-navy w-80 md:h-12 md:w-auto" alt="">
+
+                    <!-- search wrapper -->
+                    <div class="h-12 mt-4 md:ml-24 md:mt-0 relative">
+                        <input class="h-full sm:w-searchBar max-w-screen-sm px-3 placeholder-almostBlack text-almostBlack" type="text" placeholder="Search products, ranges, brands">
+                        <svg class="absolute right-2 top-3 -translate-x-6/12" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path id="Search_icon" data-name="Search icon" d="M24.835,24.782A9.834,9.834,0,0,1,10.906,10.9a9.761,9.761,0,0,1,13.929,0A9.688,9.688,0,0,1,24.835,24.782ZM12.309,12.3a7.761,7.761,0,0,0,0,11.088,7.91,7.91,0,0,0,11.123,0A7.853,7.853,0,0,0,12.309,12.3ZM32.05,29.977l-2,2-5.812-5.794v-1.4l.6-.6h1.5Z" transform="translate(-8.05 -7.975)" fill="#da291c"/>
+                        </svg>
+                        
+                    </div>
+                </div>
+                <!-- btm section (nav)-->
+                <nav class="w-full flex flex-col mt-5 items-center list-none text-white font-mont font-medium md:flex-row md:items-start">
+                <a class="flex cursor-pointer md:mr-10 text-sm">
+                Walls, floors &amp; ceilings
+                        <img class="h-full place-self-center ml-2" src="img/icon-chevron-down.svg" alt="V">
+                    </a>
+                    <a id="bathrooms-toggle" class="flex cursor-pointer md:mr-10 text-sm">
+                        Bathrooms
+                        <img class="h-full place-self-center ml-2" src="img/icon-chevron-down.svg" alt="V">
+                    </a>
+                    <a class="cursor-pointer md:mr-10 text-sm">
+                        Inspiration
+                    </a>
+                    <a class="cursor-pointer md:mr-10 text-sm">
+                        Brochure
+                    </a>
+                    <a class="cursor-pointer md:mr-10 text-sm">
+                        Buying guides
+                    </a>
+                </nav>
+            </div>
+
+            <!-- dropdown nav -->
+            <div id="bathrooms-nav" class="hidden shadow-2xl max-w-screen w-full py-8 bg-lightGrey border-primary border-b-4 absolute z-20 top-full">
+
+                <!-- dropdown inner container -->
+                <div class="container mx-auto flex flex-col justify-between md:flex-row font-neue text-primary font-bold">
+
+                    <!-- first col -->
+                    <ul class="col1 md:w-3/12 text-xl">
+                        <a class="nav-link">
+                            <span>Suites</span>
+                            <img class="h-full" src="img/icon-chevron-right.svg" alt=">">
+                        </a>
+                        <a id="basins-toggle" class="nav-link">
+                            <span>Basins</span>
+                            <img class="h-full" src="img/icon-chevron-right.svg" alt=">">
+                        </a>
+                        <a class="nav-link">
+                            <span>Toilets</span>
+                            <img class="h-full" src="img/icon-chevron-right.svg" alt=">">
+                        </a>
+                        <a class="nav-link">
+                            <span>Furniture</span>
+                            <img class="h-full" src="img/icon-chevron-right.svg" alt=">">
+                        </a>
+                        <a class="nav-link">
+                            <span>Baths</span>
+                            <img class="h-full" src="img/icon-chevron-right.svg" alt=">">
+                        </a>
+                        <a class="nav-link">
+                            <span>Enclosures &amp; Screens</span>
+                            <img class="h-full" src="img/icon-chevron-right.svg" alt=">">
+                        </a>
+                        <a class="nav-link">
+                            <span>Showers &amp; Taps</span>
+                            <img class="h-full" src="img/icon-chevron-right.svg" alt=">">
+                        </a>
+                        <a class="nav-link">
+                            <span>Radiators &amp; Heated Towel Rails</span>
+                            <img class="h-full" src="img/icon-chevron-right.svg" alt=">">
+                        </a>
+                        <a class="nav-link">
+                            <span>Accessories</span>
+                            <img class="h-full" src="img/icon-chevron-right.svg" alt=">">
+                        </a>
+                    </ul>
+
+                    <!-- second col (basins) -->
+                    <ul id="basins-nav" class="col2 opacity-0 transition-all md:w-4/12 h-full text-xl flex flex-col">
+                        <h1 class="text-3xl">Basins</h1>
+                        <a class="basins-link">
+                            All basins
+                        </a>
+                        <a class="basins-link">
+                            Cloakrooms &amp; ensuites
+                        </a>
+                        <a class="basins-link">
+                            Furniture potter
+                        </a>
+                        <a class="basins-link">
+                            Ease
+                        </a>
+                    </ul>
+
+                    <!-- third col -->
+                    <div class="col3 md:w-4/12 py-6 px-11 h-full bg-primary text-white flex flex-col justify-center items-center">
+                        <h1 class="text-4xl text-center">Free Home Measure</h1>
+                        <p class="text-base font-mont font-normal my-5">Have a trusted trader visit your home</p>
+                        <button class="btn">
+                            <img class="pr-4" src="img/icon-hm.svg" alt="">
+                            Book Home Measure</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ribbon -->
+        <div class="bg-lightGrey p-2">
+            <div class="container mx-auto flex flex-col justify-evenly text-almostBlack font-medium text-sm
+            md:flex-row">
+                <div class="flex w-full items-center sm:text-sm md:text-sm">
+                    <img class="mr-2" src="img/icon-thumb.svg" alt="">
+                    <span>Friendly local help</span>
+                </div>
+                <div class="flex w-full items-center">
+                    <img class="mr-2" src="img/icon-box.svg" alt="">
+                    Huge in-stock range
+                </div>
+                <div class="flex w-full items-center">
+                    <img class="mr-2" src="img/icon-price.svg" alt="">
+                    Price guarantee
+                </div>
+                <div class="flex w-full items-center">
+                    <img class="mr-2" src="img/icon-star.svg" alt="">
+                    5-star reviews
+                </div>
+                <div class="flex w-full items-center">
+                    <img class="mr-2" src="img/icon-location.svg" alt="">
+                    25+ showrooms
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CAROUSEL -->
+        <div class="carousel relative bg-yellow-300 max-w-screen">
+            <div class="slide">
+                <img class="w-screen" src="img/carousel-img1.png">
+                <div class="absolute top-0 flex justify-center w-full h-full">
+                    <div class="container bg-indigo-200 flex items-center">
+                        <div class="box w-32 h-32 bg-blue-500"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- FEATURED -->
+   <div class="featured container pt-8 pb-11 mx-auto">
+    <h1 class="title font-neue text-5xl text-center text-primary">Clifton tiles &amp; bathrooms</h1>
+    <div class="cards mt-8 grid grid-cols-1 gap-y-10 gap-x-4 lg:grid-cols-2">
+        <!-- card 1 -->
+        <div class="card overflow-hidden flex justify-center w-full h-featureTileExt cursor-pointer group">
+            <!-- inner -->
+            <div class="w-11/12 h-featureTile relative">
+                <h1 class="inner-tag absolute top-0 left-0 bg-yellow text-primary font-mont font-bold text-2xl z-10 pointer-events-none px-4 py-2.5">New</h1>
+                <img class="inner-img w-full h-full transform group-hover:scale-110 transition-all duration-300" src="img/featured-range1.png" alt="" srcset="">
+                <div class="absolute bottom-6 pb-1.5 left-4 border-b-2 border-primary z-10">
+                    <h1 class="inner-text text-3xl font-bold font-neue text-white">Featured Range Name</h1>
+                </div>
+                <img class="absolute bottom-0 transform group-hover:scale-x-110 transition-all duration-300 w-full" src="img/vignette-sm.png" alt="">
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card overflow-hidden flex justify-center w-full h-featureTileExt cursor-pointer group">
+            <!-- inner -->
+            <div class="w-11/12 h-featureTile relative">
+                <h1 class="inner-tag absolute top-0 left-0 bg-yellow text-primary font-mont font-bold text-2xl z-10 px-4 py-2.5">New</h1>
+                <img class="inner-img w-full h-full transform group-hover:scale-110 transition-all duration-300" src="img/featured-range2.png" alt="" srcset="">
+                <div class="absolute bottom-6 pb-1.5 left-4 border-b-4 border-primary z-10">
+                    <h1 class="inner-text text-3xl font-bold font-neue text-white">Featured Range Name</h1>
+                </div>
+                <img class="absolute bottom-0 transform group-hover:scale-x-110 transition-all duration-300 w-full" src="img/vignette-sm.png" alt="">
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card overflow-hidden flex justify-center w-full h-featureTileExt cursor-pointer group">
+            <!-- inner -->
+            <div class="w-11/12 h-featureTile relative">
+                <h1 class="inner-tag absolute top-0 left-0 bg-yellow text-primary font-mont font-bold text-2xl z-10 px-4 py-2.5">Huge savings</h1>
+                <img class="inner-img w-full h-full transform group-hover:scale-110 transition-all duration-300" src="img/featured-sale.png" alt="" srcset="">
+                <div class="absolute bottom-6 pb-1.5 left-4 border-b-4 border-primary z-10">
+                    <h1 class="inner-text text-3xl font-bold font-neue text-white">Summer Sale</h1>
+                </div>
+                <img class="absolute bottom-0 transform group-hover:scale-x-110 transition-all duration-300 w-full" src="img/vignette-sm.png" alt="">
+            </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card overflow-hidden flex justify-center w-full h-featureTileExt cursor-pointer group">
+            <!-- inner -->
+            <div class="w-11/12 h-featureTile relative">
+                <h1 class="inner-tag absolute top-0 left-0 bg-yellow text-primary font-mont font-bold text-2xl z-10 px-4 py-2.5">Special offers</h1>
+                <img class="inner-img w-full h-full transform group-hover:scale-110 transition-all duration-300" src="img/featured-heating.png" alt="" srcset="">
+                <div class="absolute bottom-6 pb-1.5 left-4 border-b-4 border-primary z-10">
+                    <h1 class="inner-text text-3xl font-bold font-neue text-white">Underfloor heating</h1>
+                </div>
+                <img class="absolute bottom-0 transform group-hover:scale-x-110 transition-all duration-300 w-full" src="img/vignette-sm.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- PRODUCT RANGE -->
+    <div class="range bg-lightGrey pt-8 pb-10">
+        <div class="container mx-auto">
+            <h1 class="font-neue mb-6 text-4xl font-bold text-primary text-center">Full bathroom product range</h1>
+            <div class="cards justify-center flex flex-wrap">
+                <!-- grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6 gap-x-4 gap-y-8 -->
+
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-walls.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            Walls, floors &amp; ceilings
+                        </h1>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-suites.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            Suites
+                        </h1>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer ">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-basins.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            Basins
+                        </h1>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer ">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-toilets.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            Toilets
+                        </h1>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer ">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-furniture.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            Furniture
+                        </h1>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer ">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-baths.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            baths
+                        </h1>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer ">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-screens.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            Enclosures &amp; Screens
+                        </h1>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer ">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-taps.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            Showers &amp; Taps
+                        </h1>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer ">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-radiators.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            Radiators &amp; Towel Rails
+                        </h1>
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="mb-8 mx-1 w-72 h-64 flex justify-center group cursor-pointer ">
+                    <!-- card inner -->
+                    <div class="w-64 h-full group-hover:w-full transition-all bg-white">
+                        <!-- img wrapper -->
+                        <div class="h-48 overflow-hidden flex justify-center">
+                            <img class="transform group-hover:scale-125 transition-all" src="img/range-accessories.png" alt="">
+                        </div>
+
+                        <h1 class="h-16 w-full flex justify-center items-center text-primary border-b-4 border-primary font-bold font-neue text-2xl">
+                            Accessories
+                        </h1>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- MEASURE -->
+    <div class="measure relative">
+        <!-- img -->
+        <img class="w-screen" src="img/measure-img.png" alt="measure-img">
+
+        <div class="container absolute transform left-1/2 -translate-x-1/2 w-full h-full flex top-0 z-20">
+            <!-- box -->
+            <div class="box mx-auto bg-primary absolute text-white w-full md:w-1/2 py-8 px-10">
+                <h1 class="text-5xl font-neue">Free Home Measure</h1>
+                <p class="mt-6 font-mont">We can arrange for one of our trusted traders to visit your home, assess what you need and answer your questions.</p>
+                <button class="btn mt-6 mb-9"><img class="mr-3" src="img/icon-hm.svg" alt=""> Book Home Measure</button>
+                <img class="absolute bottom-0 left-0 w-full" src="img/measure-lines.svg" alt="Measurement lines">
+            </div>
+        </div>
+        <!-- red divider -->
+        <div class="absolute bottom-0 bg-primary w-full h-4"></div>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video bg-black">
+        <div class="container mx-auto bg-primary">
+
+            <!-- video wrapper -->
+            <div class="bg-blue-500 w-full group relative cursor-pointer">
+
+                <!-- thumb -->
+                <img src="img/video-thumb.png" alt="">
+                <!-- vignette -->
+                <img class="absolute top-0 group-hover:opacity-0 transition" src="img/vignette.png" alt="">
+                <!-- btn -->
+                <div class="w-20 h-20 bg-primary border-4 border-white group-hover:border-primary group-hover:bg-white transition-all rounded-full absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="40" viewBox="0 0 32 40">
+                        <path class="text-primary group-hover:fill-current transition" id="play-btn" data-name="play-btn" d="M20,0,40,32H0Z" transform="translate(32) rotate(90)" fill="#fff" />
+                    </svg>
+                </div>
+
+                <!-- rating -->
+                <div class="hidden lg:inline-flex p-6 border-primary border-b-4 bg-almostBlack absolute md:bottom-16 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+                    <img class="w-24" src="img/icon-stars.svg" alt="4.5 Stars">
+                    <h1 class="font-bold text-4xl text-white font-neue mt-3">Quality &amp; service</h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- LINKS -->
+    <div id="links" class="links bg-primary py-4">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-16">
+
+            <!-- card -->
+            <div class="w-linksBoxExt bg-white relative flex justify-center group">
+                <!-- textbox wrapper -->
+                <div class="w-linksBox h-full bg-yellow absolute top-0">
+                    <div class="bg-black inline-block absolute transform -translate-y-1/2 py-5 px-7 left-0 z-20">
+                        <h1 class="text-white font-neue font-bold text-4xl">Latest brochure</h1>
+                    </div>
+                </div>
+                <!-- inner -->
+                <div class="w-linksBox h-full flex justify-center relative overflow-y-hidden origin-center group-hover:w-full">
+
+                    <!-- img wrapper -->
+                    <div class="w-full h-full bg-blue-500 group-hover:scale-125 transform flex justify-center origin-center overflow-y-hidden">
+                        <img src="img/link-brochure.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer" class="bg-navy text-white">
+
+        <div class="container mx-auto pt-12 pb-10">
+            <!-- logo wrapper -->
+            <div class="w-full">
+                <img src="img/logo.svg" alt="Clifton Trade Bathrooms">
+            </div>
+
+            <!-- links -->
+            <div class="grid grid-cols-1 md:grid-cols-3 font-mont mt-11">
+                <!-- col1 -->
+                <div class="flex flex-col text-base">
+                    <a class="footer-link font-bold text-primary" href="#">&#169 2021 Clifton Trade Bathrooms Limited</a>
+                    <a class="footer-link" href="#">The Clifton Way</a>
+                    <a class="footer-link" href="#">Price guide</a>
+                    <a class="footer-link" href="#">Work at Clifton</a>
+                </div>
+                <!-- col2 -->
+                <div class="flex flex-col">
+                    <a class="footer-link" href="#">Walls, floors &amp; ceilings</a>
+                    <a class="footer-link" href="#">Bathroom suites</a>
+                    <a class="footer-link" href="#">Bathroom furniture</a>
+                    <a class="footer-link" href="#">Basins</a>
+                    <a class="footer-link" href="#">Toilets</a>
+                    <a class="footer-link" href="#">Baths</a>
+                    <a class="footer-link" href="#">Enclosures &amp; Screens</a>
+                    <a class="footer-link" href="#">Showers &amp; Taps</a>
+                    <a class="footer-link" href="#">Radiators &amp; Heated Towel Rails</a>
+                    <a class="footer-link" href="#">Accessories</a>
+                </div>
+                <!-- col3 -->
+                <div class="flex flex-col">
+                    <a class="footer-link" href="#">Build a quote</a>
+                    <a class="footer-link" href="#">Inspiration</a>
+                    <a class="footer-link" href="#">Brochure</a>
+                    <a class="footer-link" href="#">Tile calculator</a>
+                    <a class="footer-link" href="#">Buying guides</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- carousel js -->
+    <script type="text/javascript">
+    $('.carousel').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        prevArrow:`
+        <div class="w-12 h-12 absolute left-4 sm:left-16 md:left-32 xl:left-64 top-1/2 rounded-full transform -translate-y-1/2 bg-primary cursor-pointer z-10 flex justify-center items-center">
+            <svg class="h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>    
+            </svg>
+        </div>`,
+        nextArrow:`
+        <div class="w-12 h-12 absolute right-4 sm:right-16 md:right-32 xl:right-64 top-1/2 rounded-full transform -translate-y-1/2 bg-primary cursor-pointer z-10 flex justify-center items-center">
+            <svg class="h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </div>`,
+    });
+
+    </script>
+
+    <!-- nav js -->
+    <script src="js/nav.js"></script>
+</body>
+</html>
