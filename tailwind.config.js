@@ -29,9 +29,6 @@ module.exports = {
         linksBox: "15.78rem",
         linksBoxText: "5.375rem"
       },
-      scale: {
-        link: "1.08"
-      },
       fontSize: {
         none: "0",
       },
