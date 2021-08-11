@@ -15,7 +15,6 @@ module.exports = {
       },
       fontFamily: {
         neue: "neue-kabel",
-        mont: "montserrat"
       },
       width: {
         searchBar: "28.5rem",
@@ -38,6 +37,9 @@ module.exports = {
       'md': '768px',
       'lg': '1024px',
       'xl': '1196px',
+    },
+    fontFamily: {
+      sans: ["montserrat"]
     }
     
   },
