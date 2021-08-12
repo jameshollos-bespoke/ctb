@@ -23,9 +23,6 @@ module.exports = {
         searchBar: "28.5rem",
         featureTile: "560px",
       },
-      height: {
-        featureTile: "315px",
-      },
       fontSize: {
         none: "0",
       },
