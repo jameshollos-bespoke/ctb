@@ -26,10 +26,10 @@
 
 
 .slick-dots {
-    @apply absolute bottom-0 flex justify-center container mx-auto text-none left-1/2 transform -translate-x-1/2 pb-7;
+    @apply absolute bottom-0 flex justify-center container mx-auto text-none left-1/2 transform -translate-x-1/2 pb-1 sm:pb-3 md:pb-5 lg:pb-7;
 }
 .slick-dots button  {
-    @apply bg-white rounded-full h-3 w-3 mx-1.5;
+    @apply bg-white rounded-full w-1 h-1 md:h-2 md:w-2 xl:w-3 xl:h-3 mx-1.5;
 }
 .slick-active button {
     @apply bg-primary;
