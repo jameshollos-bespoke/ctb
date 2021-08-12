@@ -22,14 +22,9 @@ module.exports = {
       width: {
         searchBar: "28.5rem",
         featureTile: "560px",
-        featureTileExt: "620px",
-        linksBoxExt: "408px",
-        linksBox: "378px"
       },
       height: {
         featureTile: "315px",
-        linksBox: "15.78rem",
-        linksBoxText: "5.375rem"
       },
       fontSize: {
         none: "0",
