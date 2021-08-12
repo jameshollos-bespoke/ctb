@@ -7,12 +7,7 @@ const basinsNav = document.getElementById("basins-nav");
 //open main nav
 bathroomsNavToggle.addEventListener("click", () => {
     bathroomsNav.classList.toggle("active")
-
-    if(bathroomsNav.classList.contains("active") && basinsNav.classList.contains("visible")){
-        basinsNav.classList.toggle("visible")        
-    } else {
-        removeNavColors()
-    }
+    bathroomsNav.classList.contains("active") && basinsNav.classList.contains("visible") ? basinsNav.classList.toggle("visible") : removeNavColors()
 });
 
 //open col2 menu
