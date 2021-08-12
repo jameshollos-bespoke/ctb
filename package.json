@@ -13,7 +13,7 @@
     "tailwindcss-debug-screens": "^2.0.0"
   },
   "scripts": {
-    "build:css": "tailwind build -i src/styles.css -o dist/styles.css"
+    "build:css": "tailwindcss build -i src/styles.css -o dist/styles.css --minify"
   },
   "keywords": [],
   "author": "",
